@@ -17,7 +17,10 @@ $.addEventListener("DOMContentLoaded", () => {
     console.log(data);
 
     try {
-      const response = await axios.post("http://localhost:3000/form", data);
+      const response = await axios.post(
+        "https://olivier-form-backend.herokuapp.com/form",
+        data
+      );
 
       console.log("data===>", data);
       console.log(response);
